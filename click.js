@@ -1,7 +1,8 @@
-let click = 0;
+let click = 0; // put as a starting integer of the click 
 
 document.getElementById('click').onclick = function(){
-    click++;
+    click++; //click++ just means adding one per click or per interaction
+    //if else per clicks and alert to what it says 67 67 67
     if(click == 5){
         alert('faster daddy');
     }
@@ -21,7 +22,7 @@ document.getElementById('click').onclick = function(){
         alert('💦💦💦💦');
     }
 }// this is for the clicks
-
+//getElementById(). what function = function(){ inside is the value and what you want to do with the value }
 document.getElementById('show').onclick = function(){
     alert('The number of Clicks: ' + click);
     
@@ -29,5 +30,5 @@ document.getElementById('show').onclick = function(){
 
 document.getElementById('reset').onclick = function(){
     alert('Clicks back to 0');
-    click = 0 ;
+    click = 0 ; // if clicked the number of clicks replaced to 0 because one = is replacing and two '==' is equals.
 }
