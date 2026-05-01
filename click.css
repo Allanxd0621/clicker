@@ -4,6 +4,9 @@
     padding: 20px;
     border-radius: 12px;
     margin-top:50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     
 }
 body{
@@ -15,5 +18,11 @@ button{
     background-color:bisque;
 }
 h1{
-    margin-bottom: 200px;
+    margin-bottom: 20px;
 }
+
+.bitch{
+    width: 200px;
+}
+
+
