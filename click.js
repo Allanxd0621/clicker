@@ -3,6 +3,7 @@ let click = 0; // put as a starting integer of the click
 document.getElementById('click').onclick = function(){
     click++; //click++ just means adding one per click or per interaction
     //if else per clicks and alert to what it says 67 67 67
+    playSound();
     if(click == 5){
         alert('faster daddy');
     }
@@ -31,4 +32,10 @@ document.getElementById('show').onclick = function(){
 document.getElementById('reset').onclick = function(){
     alert('Clicks back to 0');
     click = 0 ; // if clicked the number of clicks replaced to 0 because one = is replacing and two '==' is equals.
+}
+
+function playSound(){
+    const mp3 = document.getElementById("mp3");
+    mp3.play(); // this to play the song 
+    mp3.currentTime = 0; // this to restart the song again to 0
 }
